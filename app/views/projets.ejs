@@ -1,0 +1,21 @@
+<%-include ('partials/header.ejs') %>
+  <!-- Tous les projets -->
+  <section id="projets">
+    <h2 id="projets__title">Tous les projets</h2>
+    <h3 id="projets__title-sub">La Nature... et l'Homme</h3>
+
+    <div class="projets__sliders">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <% for( element of datas ) { %>
+              <img class="slider__img" src="/assets/<%= element.adresse %>" alt="<%= element.nom %>" />
+              <% } %>
+                <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%-include ('partials/footer.ejs') %>

@@ -1,0 +1,405 @@
+/* Variable */
+:root {
+  --couleurDeTitre: #325a5a;
+  --couleurDeSousTitre: #53566a;
+  --fondEcran: #d9c8b8;
+  --couleurListe: #636894;
+  --policeIbarra: "Ibarra Real Nova";
+  --policeIMFell: "IM Fell Great Primer SC";
+  --policebaskerville: "Libre Baskerville";
+}
+/* Body */
+body {
+  width: 95%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--fondEcran);
+  font-family: var(--policebaskerville), serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1,
+footer h1,
+nav a {
+  font-family: "Roboto Mono", cursive;
+  text-transform: uppercase;
+}
+
+/* HEADER TITRES*/
+
+#header__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  background: url("/assets/separateur.png") repeat-x bottom;
+}
+#header__logo {
+  width: 100%;
+}
+#header__logo__p {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#header__horloge {
+  display: inline-block;
+  padding-left: 1.5rem;
+  margin: 0% auto;
+  color: #000;
+}
+
+#header__titre {
+  width: 100%;
+  margin: 1% auto;
+  padding: 2rem;
+  text-align: center;
+}
+#header__titre_h1 {
+  color: var(--couleurDeTitre);
+  font-family: var(--policeIMFell), serif;
+  padding: 1rem;
+}
+#header__titre_h1 strong {
+  font-size: 2rem;
+}
+#Titre h2 {
+  font-size: 1rem;
+  font-family: var(--policeIMFell), serif;
+  background-color: var(--fondEcran);
+}
+
+/* Head liste menu */
+
+#header__nav {
+  width: 100%;
+}
+#header__nav_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__nav_li {
+  padding: 0.5rem;
+}
+.header__nav_li:before {
+  content: "☆ ";
+}
+.header__nav_li:active {
+  position: relative;
+  top: 1px;
+}
+.header__nav-link {
+  color: var(--couleurDeTitre);
+  text-decoration: none;
+  font-family: var(--policeIbarra), serif;
+  font-size: 1.2rem;
+  box-shadow: 7px 7px 17px rgba(70, 70, 70, 0.35);
+  border-radius: 10px;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+}
+.header__nav-link:hover {
+  box-shadow: 7px -7px 17px rgba(255, 255, 255, 0.562);
+  color: rgb(95, 125, 160);
+}
+
+/* Home */
+
+#projet-titre {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+#projet-titre__h2 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-family: "IM Fell Great Primer SC", serif;
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+}
+h3 {
+  font-family: var(--policebaskerville), serif;
+  padding: 1rem;
+  color: var(--couleurDeSousTitre);
+}
+#projet-titre__nav {
+  width: 50%;
+  margin: 0 auto;
+}
+#projet-titre__nav_ul {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+/* Projets */
+#projets {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+#projets__title {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-family: "IM Fell Great Primer SC", serif;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+#projets__title-sub {
+  text-align: center;
+}
+/* projet */
+#projet {
+  text-align: center;
+  padding-top: 1rem;
+}
+.projet__titreImg {
+  color: var(--couleurDeTitre);
+}
+.projet__titreImg:hover {
+  color: rgb(95, 125, 160);
+}
+.projet__titreImg:active {
+  position: relative;
+  top: 1px;
+}
+.projet__img_title {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* aside */
+.container {
+  width: 70%;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+#aside__title {
+  text-align: center;
+  padding: 1rem;
+  font-size: larger;
+}
+#aside__div_image {
+  width: 260px;
+  height: 340px;
+  background: url("/assets/photo2.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 2rem;
+}
+#aside__speech {
+  padding: 4rem;
+  margin-top: 1%;
+}
+p {
+  line-height: 2rem;
+}
+.asset__li {
+  line-height: 2rem;
+}
+#aside__ecole {
+  color: #000;
+  text-shadow: 1px 1px 1px grey;
+}
+#aside__ecole:hover {
+  text-decoration: underline;
+  color: blue;
+}
+#aside__ecole:active {
+  position: relative;
+  top: 1px;
+}
+/* Production */
+#production {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#production__title {
+  text-align: center;
+  padding: 1rem;
+  font-size: larger;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+iframe {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+#production__div_image {
+  margin-bottom: 2rem;
+  background: url("/assets/invader.jpg") no-repeat;
+  background-size: cover;
+  width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}
+#invaders {
+}
+
+/* Footer */
+#footer {
+  background: url("/assets/separateur.png") repeat-x top;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+#footer__h2 {
+  text-transform: none;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-family: "IM Fell Great Primer SC", serif;
+  padding-bottom: 0.5rem;
+}
+
+/* Animation des bouttons de réseaux */
+#footer__conteneur {
+  width: 100%;
+  margin: 0% auto;
+  padding: 1rem;
+}
+
+#footer__reseaux {
+  margin: 0% auto;
+  height: 90px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer__links:hover {
+  background: #dab796;
+}
+.footer__links {
+  display: block;
+  height: 50px;
+  width: 50px;
+  box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6),
+    7px 7px 17px rgba(70, 70, 70, 0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 40px;
+}
+.fa-twitter {
+  color: #23abff;
+}
+.fa-github {
+  color: #000;
+}
+.fa-linkedin {
+  color: rgb(11, 102, 195);
+}
+.fa-whatsapp {
+  color: #27ae60;
+}
+.footer__links:active {
+  box-shadow: inset -7px -7px 17px rgba(255, 255, 255, 0.6),
+    inset 7px 7px 17px rgba(70, 70, 70, 0.12);
+}
+
+#footer__bottom {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+}
+#footer__contact_p {
+  font-family: var(--policebaskerville), serif;
+}
+#footer__email {
+  color: white;
+}
+#footer__mail:hover {
+  color: rgb(148, 189, 243);
+}
+#footer__mail:active {
+  position: relative;
+  top: 1px;
+}
+#footer__contact__date,
+span {
+  font-family: "Roboto Mono", cursive;
+}
+
+/* Partie images animation*/
+.slider {
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  overflow: hidden;
+}
+.slides {
+  padding-bottom: 1rem;
+  width: calc(700px * 5); /*taille de l'image *5*/
+}
+.slider__img {
+  width: 43.5rem;
+  height: 30rem;
+  /* width: 696px;
+  height: 500px; */
+  border: 0px solid transparent;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+.slide {
+  float: left;
+  animation: deplacement 30s infinite;
+}
+
+/* Partie animation */
+/*premiere img = valeur 0*/
+@keyframes deplacement {
+  0% {
+    transform: translateX(0); /*taille de l'image*/
+  }
+
+  14% {
+    transform: translateX(-700px);
+  }
+
+  26% {
+    transform: translateX(-1400px);
+  }
+
+  38% {
+    transform: translateX(-2100px);
+  }
+
+  50% {
+    transform: translateX(-2800px);
+  }
+
+  62% {
+    transform: translateX(-2100px);
+  }
+
+  74% {
+    transform: translateX(-1400px);
+  }
+
+  86% {
+    transform: translateX(-700px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
