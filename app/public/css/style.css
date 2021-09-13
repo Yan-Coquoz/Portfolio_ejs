@@ -127,13 +127,16 @@ h3 {
   color: var(--couleurDeSousTitre);
 }
 #projet-titre__nav {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 #projet-titre__nav_ul {
   display: flex;
   padding: 1rem 2rem;
   justify-content: space-between;
+}
+.projet-titre__nav_li {
+  width: 100%;
 }
 
 /* Projets */
@@ -160,6 +163,7 @@ h3 {
 }
 .projet__titreImg {
   color: var(--couleurDeTitre);
+  margin: 0.5%;
 }
 .projet__titreImg:hover {
   color: rgb(95, 125, 160);
@@ -238,15 +242,21 @@ iframe {
   border-radius: 10px;
 }
 
+#invaders {
+  display: block;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
 #production__div_image {
-  margin-bottom: 2rem;
+  margin: 0 auto 0 auto;
   background: url("/assets/invader.jpg") no-repeat;
   background-size: cover;
-  width: 560px;
-  height: 315px;
   border-radius: 10px;
-}
-#invaders {
+  width: 100%;
+  height: 100%;
+  max-width: 560px;
 }
 
 /* Footer */
@@ -401,5 +411,45 @@ span {
 
   100% {
     transform: translateX(0px);
+  }
+}
+
+@media all and (max-width: 900px) {
+  /* Header */
+  #header__container {
+    flex-direction: column;
+  }
+  #header__logo__p {
+    display: none;
+  }
+  #header__nav_ul {
+  }
+  /* Accueil */
+  .container {
+    box-sizing: content-box;
+    width: 90%;
+  }
+  #projet-titre__nav {
+    margin: none;
+    padding-bottom: 1rem;
+  }
+  #projet-titre__nav_ul {
+    font-size: 18em;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+  .projet__titreImg {
+    font-size: small;
+    margin: 0 0.5rem;
+  }
+  /* Production */
+  .production__p {
+    margin: 0 1rem;
+  }
+  iframe {
+    width: 90%;
+  }
+  #production__div_image {
   }
 }
