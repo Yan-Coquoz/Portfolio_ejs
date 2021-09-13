@@ -18,3 +18,8 @@ le site existe seulement en version desktop.
 ### Hebergement :
 
 Heroku
+
+### TODO
+
+- responsive design
+- and add media queries
