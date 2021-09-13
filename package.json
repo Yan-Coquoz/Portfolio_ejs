@@ -1,0 +1,29 @@
+{
+  "name": "backfolio",
+  "version": "1.0.5",
+  "description": "Mon portfolio version back (simple)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "ejs",
+    "express"
+  ],
+  "author": "Yan Coquoz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

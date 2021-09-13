@@ -1,0 +1,34 @@
+<%-include ('partials/header.ejs') %>
+  <!-- Un seul projet -->
+  <section id="projet">
+    <nav id="projet-titre__nav">
+      <ul id="projet-titre__nav_ul">
+        <li>
+          <a href="/projet/animaux"><span class="projet__titreImg">Nature d'Afrique</span></a>
+        </li>
+        <li>
+          <a href="/projet/chemins "><span class="projet__titreImg">Sur les routes</span></a>
+        </li>
+        <li>
+          <a href="/projet/plages"><span class="projet__titreImg">L'Homme et l'eau</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- PREMIER PROJET -->
+    <div class="projet">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <% for( element of typeTab ) { %>
+              <img class="slider__img" src="/assets/<%= element.adresse %>" alt="<%= element.nom %>" />
+              <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="projet__img_title">
+      <%= element.titre %>
+    </span>
+  </section>
+
+  <%-include ('partials/footer.ejs') %>
