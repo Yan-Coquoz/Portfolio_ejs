@@ -242,6 +242,12 @@ iframe {
   border-radius: 10px;
 }
 
+.production__p {
+  min-width: 50%;
+  max-width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
 #invaders {
   display: block;
   height: 90%;
@@ -418,9 +424,13 @@ span {
   /* Header */
   #header__container {
     flex-direction: column;
+    padding: 1rem;
   }
   #header__logo__p {
     display: none;
+  }
+  #header__titre {
+    padding: 1rem;
   }
 
   /* Accueil */
@@ -450,6 +460,10 @@ span {
     flex-direction: column;
     min-width: 25%;
     align-items: center;
+  }
+  #aside__div_image {
+    float: none;
+    margin: 1rem auto;
   }
 
   /* Production */
