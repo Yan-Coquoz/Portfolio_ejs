@@ -422,8 +422,7 @@ span {
   #header__logo__p {
     display: none;
   }
-  #header__nav_ul {
-  }
+
   /* Accueil */
   .container {
     box-sizing: content-box;
@@ -443,7 +442,18 @@ span {
     font-size: small;
     margin: 0 0.5rem;
   }
+  /* aside */
+
+  #aside__speech {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+    align-items: center;
+  }
+
   /* Production */
+
   .production__p {
     margin: 0 1rem;
   }
